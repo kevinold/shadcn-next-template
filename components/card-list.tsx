@@ -1,18 +1,37 @@
-import { Card } from "./ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card"
 
 const cardList = [
   {
-title: "Card Title",
-description: "Card Description",
-body: "Card Body",
-  }
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
 ]
 
-
 export function CardList() {
-  <>
-  <Card>
-    <Card.Title>Card Title</Card.Title>
-  </Card>
-  </>
+  return (
+    <>
+      {cardList.map((card) => (
+        <Card>
+          <CardHeader>
+            <CardTitle>{card.title}</CardTitle>
+            <CardDescription>{card.description}</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <CardContent>{card.content}</CardContent>
+          </CardContent>
+          <CardFooter>
+            <p>Card Footer</p>
+          </CardFooter>
+        </Card>
+      ))}
+    </>
+  )
 }

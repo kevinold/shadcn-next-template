@@ -35,9 +35,7 @@ export default function IndexPage() {
           GitHub
         </Link>
       </div>
-      <div className="flex gap-4">
-        <CardList />
-      </div>
+      <CardList />
     </section>
   )
 }

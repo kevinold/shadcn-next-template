@@ -13,11 +13,41 @@ const cardList = [
     description: "Card Description",
     content: "Card Content",
   },
+  {
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
+  {
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
+  {
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
+  {
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
+  {
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
+  {
+    title: "Card Title",
+    description: "Card Description",
+    content: "Card Content",
+  },
 ]
 
 export function CardList() {
   return (
-    <>
+    <div className="mt-6 grid gap-4 sm:grid-cols-2">
       {cardList.map((card) => (
         <Card>
           <CardHeader>
@@ -32,6 +62,6 @@ export function CardList() {
           </CardFooter>
         </Card>
       ))}
-    </>
+    </div>
   )
 }

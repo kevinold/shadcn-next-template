@@ -48,8 +48,8 @@ const cardList = [
 export function CardList() {
   return (
     <div className="mt-6 grid gap-4 sm:grid-cols-2">
-      {cardList.map((card) => (
-        <Card>
+      {cardList.map((card, i) => (
+        <Card key={i}>
           <CardHeader>
             <CardTitle>{card.title}</CardTitle>
             <CardDescription>{card.description}</CardDescription>
